@@ -25,7 +25,109 @@
     <section class="program-form">
         <h1 class="program-form__title">Подбор программы</h1>
         <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="#" name="form" method="post" class="form">
+            <fieldset class="form__cat">
+                <legend class="form__title visually-hidden">Данные кота</legend>
+                <div class="form__cat-data">
+                    <label class="form__cat-name">имя:<sup>*</sup>
+                        <input type="text" name="cat-name" placeholder="барсик">
+                    </label>
+                    <label class="form__cat-weight">вес (кг):<sup>*</sup>
+                        <input type="number" name="cat-weight" placeholder="7">
+                    </label>
+                    <label class="form__cat-age">возраст (лет):
+                        <input type="number" name="cat-age" placeholder="7">
+                    </label>
+                </div>
+                <div class="form__type-program">
+                    <label class="form__cat-thin">
+                        <input type="radio" name="cat-radio" checked>похудение
+                    </label>
+                    <label class="form__cat-thick">
+                        <input type="radio" name="cat-radio">набор массы
+                    </label>
+                    <label class="form__cat-unknown">
+                        <input type="radio" name="cat-radio">не знаю (нужен ваш совет)
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form__contact">
+                <legend class="form__title">Контактные данные (владельца кота)</legend>
+                <div class="form__owner">
+                    <label class="form__owner-email">e-mail:<sup>*</sup>
+                        <input type="email" name="owner-email" placeholder="kuklachev@gmail.com">
+                    </label>
+                    <label class="form__owner-tel">телефон:<sup>*</sup>
+                        <input type="tel" name="owner-tel" placeholder="8 (960) 900-60-90">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form__comment">
+                <legend class="form__title">Комментарий</legend>
+                <div class="form__comment-container">
+                    <textarea name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="form__addition">
+                <legend class="form__title form__title--addition">Дополнительно</legend>
+                <div class="form__addition">
+                    <label class="form__addition-sugar">
+                        <input type="checkbox" name="addition-sugar" checked>сахарозаменитель
+                    </label>
+                    <label class="form__addition-water">
+                        <input type="checkbox" name="addition-water">питьевая вода
+                    </label>
+                    <label class="form__addition-milk">
+                        <input type="checkbox" name="addition-milk">молоко
+                    </label>
+                    <label class="form__addition-vito">
+                        <input type="checkbox" name="addition-vitamin">витамины
+                    </label>
+                </div>
+            </fieldset>
+            <button class="button button--form" type="submit">отправить заявку</button>
+            <p><sup>*</sup> — Обязательные поля</p>
+        </form>
+    </section>
+    <section class="contacts">
+        <div class="contacts__wrapper">
+            <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>
+            <address class="contacts__address">
+                <p class="contacts__location">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+            </address>
+            <div class="contacts__map">
+                <iframe></iframe>
+            </div>
+        </div>
     </section>
 </main>
+<footer class="page-footer">
+    <div class="page-footer__wrapper">
+        <div class="page-footer__footer-logo">
+            <a class="footer-logo__link" href="#">
+                <span>cat energy</span>
+            </a>
+        </div>
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vk" href="#">Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--fb" href="#">Фейсбук</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--inst" href="#">Инстаграм</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <a class="copyright__link" href="#">
+                <span>HTML Academy</span>
+                <img src="">
+            </a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
