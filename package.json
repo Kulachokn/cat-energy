@@ -1,0 +1,20 @@
+{
+  "name": "cat-energy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp sass",
+    "watch": "gulp sass:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "merge-stream": "^1.0.1",
+    "node-sass": "^4.11.0"
+  }
+}
