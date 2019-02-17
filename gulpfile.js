@@ -10,11 +10,11 @@ sass.compiler = require('node-sass');
 gulp.task('sass', style);
 
 gulp.task('sass:watch', function () {
-    gulp.watch('./scss/**/*.scss', style);
+    gulp.watch('./sass/**/*.scss', style);
 });
 
 function style() {
-    return gulp.src('./scss/style.scss')
+    return gulp.src('./sass/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))

@@ -1,0 +1,15 @@
+@import "normalize";
+@import "font";
+@import "variables";
+@import "mixins";
+@import "global";
+
+@import "blocks/header";
+@import "blocks/footer";
+
+// blocks
+@import "blocks/promo";
+@import "blocks/program";
+@import "blocks/about";
+@import "blocks/sample";
+@import "blocks/contacts";
