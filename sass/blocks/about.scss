@@ -1,0 +1,26 @@
+@import "../variables";
+
+.about__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+}
+
+.about__item {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+

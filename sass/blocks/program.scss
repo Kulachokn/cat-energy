@@ -1,0 +1,57 @@
+@import "../variables";
+
+.program__list {
+  margin: 0;
+  padding: 0;
+}
+
+.program__type {
+  background-color: $background;
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.program__type {
+  a {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 16px;
+    color: $big-text;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-left: 25px;
+  }
+}
+
+.program__title {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.program__description {
+  margin: 0 auto;
+  padding: 0;
+  font-family: $add-font;
+  font-size: 14px;
+  line-height: 18px;
+  width: 230px;
+  margin-bottom: 45px;
+}
+
+.program__description::after {
+  content: '';
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  width: 240px;
+  height: 2px;
+  border-bottom: 1px solid $add-color;
+}

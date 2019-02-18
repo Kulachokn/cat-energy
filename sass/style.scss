@@ -3,6 +3,7 @@
 @import "variables";
 @import "mixins";
 @import "global";
+@import "visually-hidden";
 
 @import "blocks/header";
 @import "blocks/footer";
@@ -13,3 +14,4 @@
 @import "blocks/about";
 @import "blocks/sample";
 @import "blocks/contacts";
+@import "blocks/button";

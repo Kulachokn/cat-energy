@@ -12,9 +12,11 @@
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-resolve-url": "0.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
     "merge-stream": "^1.0.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.11.0",
+    "posthtml-include": "^1.2.0"
   }
 }

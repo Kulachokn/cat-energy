@@ -1,0 +1,11 @@
+@import "../variables";
+
+.button {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+  padding: 10px 75px;
+}
