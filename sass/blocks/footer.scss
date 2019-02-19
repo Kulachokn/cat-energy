@@ -1,0 +1,15 @@
+@import "../variables";
+
+.page-footer {
+  background-color: $background;
+}
+
+.social__list {
+  display: flex;
+}
+
+.copyright__link {
+  span {
+    color: $small-text;
+  }
+}

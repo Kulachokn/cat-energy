@@ -1,0 +1,14 @@
+@import "../variables";
+
+.contacts__title {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+}

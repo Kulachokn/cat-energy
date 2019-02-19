@@ -1,0 +1,33 @@
+@import "../variables";
+
+.sample {
+  background-color: $background;
+  width: 275px;
+  margin: 0 auto;
+}
+
+.sample__title {
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.sample__description {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sample__stats {
+  td {
+    border: 2px solid $add-color;
+    text-align: center;
+    width: 120px;
+  }
+}
+
+.sample__text {
+  text-transform: uppercase;
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 20px;
+}
