@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   height: 65px;
+  display: flex;
 }
 
 .page-header__logo-image {
@@ -25,6 +26,7 @@
   top: 25px;
   right: 10px;
 }
+
 .site-list__item {
   text-transform: uppercase;
   font-size: 20px;
@@ -34,4 +36,14 @@
 
 .main-nav__toggle {
   font-size: 0;
+}
+
+.main-nav__toggle::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 18px;
+  background: url('../../img/mobile-menu.svg') no-repeat 0 0;
 }

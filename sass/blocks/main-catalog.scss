@@ -1,0 +1,104 @@
+@import "../variables";
+
+.main-catalog__list {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.product {
+  div {
+    width: 140px;
+  }
+}
+
+.product__title {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $big-text;
+  text-transform: uppercase;
+  width: 80px;
+}
+
+.product__property {
+  font-size: 12px;
+  line-height: 16px;
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  color: $small-text;
+}
+
+//.product__property {
+//  tr:nth-of-type(2) {
+//    text-align: right;
+//  }
+//}
+
+.product-title--all {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $big-text;
+}
+
+.product-text--all {
+  font-size: 12px;
+  line-height: 16px;
+  color: $small-text;
+}
+
+.button--product {
+  width: 280px;
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.button--product--all {
+  background-color: $background;
+  color: $small-text;
+  width: 280px;
+  text-align: center;
+  padding: 10px 95px;
+}
+
+.product--all {
+  padding-top: 100px;
+  position: relative;
+}
+
+.product--all::before {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: url('../../img/plus-mobile.svg') no-repeat 0 0;
+}
+
+.product-title--all {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product-text--all {
+  font-size: 12px;
+  line-height: 16px;
+  color: $small-text;
+  text-align: center;
+}

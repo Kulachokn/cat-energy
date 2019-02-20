@@ -1,0 +1,61 @@
+@import "../variables";
+
+.add-catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.add-catalog__title {
+  font-family: $main-font;
+  color: $big-text;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.add-catalog__title::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -20px;
+  width: 53px;
+  height: 3px;
+  color: $green;
+}
+
+.add-good {
+  padding-top: 17px;
+}
+
+.add-good__title {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $big-text;
+  text-transform: uppercase;
+}
+
+.add-catalog__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+}
+
+.add-product__text {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.button--add-good {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 110px;
+  margin: 15px 0;
+}
+
+.add-catalog__all {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url("../../img/gift-photo-mobile.jpg");
+  background-size: 280px 289px;
+}
