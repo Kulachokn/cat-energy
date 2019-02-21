@@ -58,21 +58,6 @@
   color: $small-text;
 }
 
-.button--product {
-  width: 280px;
-  text-align: center;
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-
-.button--product--all {
-  background-color: $background;
-  color: $small-text;
-  width: 280px;
-  text-align: center;
-  padding: 10px 95px;
-}
-
 .product--all {
   padding-top: 100px;
   position: relative;
@@ -101,4 +86,5 @@
   line-height: 16px;
   color: $small-text;
   text-align: center;
+  margin-bottom: 20px;
 }

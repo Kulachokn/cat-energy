@@ -1,0 +1,70 @@
+@import "../variables";
+
+.program-form {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.program-form {
+  input {
+    border-color: $add-color-1;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
+  label {
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $big-text;
+  }
+  textarea {
+    border-color: $add-color-1;
+    font-family: $main-font;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 15px;
+  }
+}
+
+.program-form__title {
+  font-family: $main-font;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.program-form__text {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $small-text;
+  width: 250px;
+}
+
+.form__cat-data,
+.form__type-program,
+.form__owner,
+.form__comment-container,
+.form__addition {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+

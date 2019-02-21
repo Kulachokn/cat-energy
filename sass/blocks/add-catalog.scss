@@ -38,7 +38,7 @@
 .add-catalog__list {
   margin: 0;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .add-product__text {
@@ -46,16 +46,25 @@
   line-height: 14px;
 }
 
-.button--add-good {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10px 110px;
-  margin: 15px 0;
-}
-
 .add-catalog__all {
+  width: 280px;
+  height: 290px;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-image: url("../../img/gift-photo-mobile.jpg");
   background-size: 280px 289px;
+  position: relative;
+}
+
+.add-catalog__all::after {
+  content: '';
+  top: 10px;
+  left: 20px;
+  background: url("../../img/gift.svg") no-repeat 0 0;
+}
+
+.add-catalog__all-link {
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
 }

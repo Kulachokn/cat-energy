@@ -4,6 +4,12 @@
   background-color: $background;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .social__list {
   display: flex;
 }
