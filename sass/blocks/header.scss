@@ -3,6 +3,7 @@
   padding: 0;
   height: 65px;
   display: flex;
+  position: relative;
 }
 
 .page-header__logo-image {
@@ -34,11 +35,11 @@
   text-align: center;
 }
 
-.main-nav__toggle {
-  font-size: 0;
-}
+//.main-nav__toggle {
+//  font-size: 0;
+//}
 
-.main-nav__toggle::after {
+.main-nav::after {
   content: '';
   position: absolute;
   top: 5px;

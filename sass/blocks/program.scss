@@ -3,7 +3,28 @@
 .program__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+@media (min-width: $tablet-width) {
+  .program__list {
+    flex-direction: row;
+  }
+  .program__type {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__list {
+    flex-direction: row;
+  }
+  .program__type {
+    width: 570px;
+  }
+}
+
 
 .program__type {
   background-color: $background;
@@ -12,6 +33,8 @@
   width: 280px;
   position: relative;
   padding-bottom: 15px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .program__type {
@@ -34,6 +57,8 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: lighter;
+  margin: 0;
+  padding: 0;
 }
 
 .program__description {

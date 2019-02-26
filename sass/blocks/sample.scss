@@ -2,8 +2,15 @@
 
 .sample {
   background-color: $background;
-  width: 275px;
+  //width: 275px;
   margin: 0 auto;
+}
+
+.sample-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .sample__title {
@@ -17,17 +24,41 @@
   line-height: 18px;
 }
 
-.sample__stats {
-  td {
-    border: 2px solid $add-color;
-    text-align: center;
-    width: 120px;
-  }
+.sample__list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.sample__text {
+.sample__item {
+  display: block;
   text-transform: uppercase;
   font-family: $main-font;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  min-width: 124px;
+  text-align: center;
+}
+
+.sample__item:last-child {
+  margin-left: 23px;
+}
+
+.sample__item sub {
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  font-family: $add-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: none;
+  width: 65px;
+  padding: 0 15px;
 }
