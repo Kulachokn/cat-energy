@@ -1,13 +1,13 @@
 @import "../variables";
 
 .program-form {
-  width: 280px;
   margin: 0 auto;
 }
 
 .program-form {
   input {
     border-color: $add-color-1;
+    border-style: solid;
     margin-left: 15px;
     font-size: 16px;
     line-height: 18px;
@@ -23,7 +23,7 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
-    color: $big-text;
+    color: $add-color-3;
     margin-bottom: 20px;
   }
   textarea {
@@ -36,6 +36,140 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .program-form {
+    width: 768px;
+  }
+  .program-form__title {
+    font-size: 60px;
+    text-align: left;
+  }
+  .program-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+  }
+  .form__cat-container {
+    //display: flex;
+    //flex-direction: column;
+    padding-right: 67px;
+    padding-left: 70px;
+  }
+  .form__cat-data {
+    //width: 631px;
+    max-width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+
+  }
+  .form__type-program {
+    padding-right: 37px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form {
+    width: 1220px;
+  }
+  .program-form label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .program-form__title {
+    font-size: 60px;
+  }
+  .program-form__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
+  .form__cat-container {
+    display: flex;
+    //justify-content: space-between;
+    max-width: 1300px;
+  }
+  .form__cat-data {
+    margin: 0;
+    flex-grow: 1;
+    max-width: none;
+    margin-right: 80px;
+  }
+  .form__type-program {
+    flex-grow: 1;
+    max-width: none;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    //align-self: stretch;
+  }
+  .form__owner {
+    flex-direction: row;
+    justify-content: space-between;
+    label {
+      max-width: 570px;
+      margin: 0;
+      flex-grow: 1;
+    }
+  }
+  .form__title {
+    padding-left: 33px;
+  }
+
+  .form__owner-email {
+    margin-right: 30px;
+  }
+  .form__comment-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .form__addition-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 65px;
+    label:nth-child(3-n) {
+      min-width: 300px;
+    }
+  }
+  .form__text {
+    //max-width: 245px;
+    flex-grow: 1;
+    text-align: left;
+  }
+  .form__push {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+  .contacts__wrapper {
+    position: relative;
+  }
+  .contacts__address {
+    width: 570px;
+    margin: 0;
+    position: absolute;
+    content: '';
+    top: 95px;
+    left: 20px;
+    padding-top: 65px;
+    padding-right: 76px;
+    padding-left: 76px;
+    padding-bottom: 65px;
+  }
+  .contacts__map {
+    min-height: 400px;
+  }
+}
+
+.form__cat-container {
+  margin: 0 auto;
+  min-width: 320px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 .program-form__title {
   font-family: $main-font;
@@ -57,9 +191,7 @@
 
 .form__cat-data,
 .form__type-program,
-.form__owner,
-.form__comment-container,
-.form__addition {
+.form__comment-container {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -70,5 +202,63 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 20px;
+}
+
+.form__type-program,
+.form__addition-container {
+  label {
+    padding-left: 45px;
+    position: relative;
+  }
+}
+
+.form__cat-unknown {
+  margin-bottom: 0;
+}
+
+.form__type-program {
+  border: 2px solid $add-color-1;
+}
+
+.form__type-program label::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid $add-color-4;
+  border-radius: 50%;
+}
+
+.form__addition-container label::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 5px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid $add-color-4;
+}
+
+.form__cat-name,
+.form__cat-weight,
+.form__cat-age,
+.form__owner-email,
+.form__owner-tel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    flex-grow: 1;
+  }
+}
+
+.form__owner {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
 }
 

@@ -4,6 +4,8 @@
   width: 280px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .add-catalog__title {
@@ -11,6 +13,31 @@
   color: $big-text;
   font-size: 24px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .add-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .add-good {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .add-catalog__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .add-good {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .add-catalog__title::before {
@@ -25,6 +52,8 @@
 
 .add-good {
   padding-top: 17px;
+  display: flex;
+  flex-direction: column;
 }
 
 .add-good__title {
@@ -57,10 +86,15 @@
 }
 
 .add-catalog__all::after {
+  position: absolute;
   content: '';
   top: 10px;
   left: 20px;
-  background: url("../../img/gift.svg") no-repeat 0 0;
+  width: 55px;
+  height: 60px;
+  //background-repeat: no-repeat;
+  //background-position: 0 0;
+  background-image: url("../../img/gift.svg");
 }
 
 .add-catalog__all-link {

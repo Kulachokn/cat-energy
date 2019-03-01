@@ -4,6 +4,40 @@
   margin: 0 auto;
   padding: 0;
   width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product {
+    background-color: $background;
+    width: 325px;
+    height: 431px;
+  }
+  .product--all {
+    width: 325px;
+    height: 431px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .product {
+    background-color: $background;
+    width: 245px;
+    height: 431px;
+  }
+  .product--all {
+    width: 245px;
+    height: 431px;
+  }
 }
 
 .product {

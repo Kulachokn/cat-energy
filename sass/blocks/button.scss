@@ -41,3 +41,9 @@
   line-height: 20px;
   padding: 10px 77px;
 }
+
+@media (min-width: $desktop-width) {
+  .button--form {
+    flex-grow: 1;
+  }
+}
