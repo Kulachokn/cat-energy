@@ -1,6 +1,8 @@
 @import "../variables";
 
 .button {
+  display: block;
+  width: 100%;
   font-family: $main-font;
   color: $white;
   text-transform: uppercase;
@@ -8,38 +10,42 @@
 }
 
 .button--product {
-  width: 280px;
   text-align: center;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
 }
+
 
 .button--product--all {
   background-color: $background;
   color: $small-text;
-  width: 280px;
   text-align: center;
-  padding: 10px 95px;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button--add-good {
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 110px;
+  padding: 10px 0;
   margin: 15px 0;
+  text-align: center;
 }
 
 .button-promo {
   font-size: 14px;
   line-height: 18px;
-  padding: 11px 73px;
+  padding: 10px 0;
   margin-left: 20px;
 }
 
 .button--form {
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 77px;
+  padding: 10px 0px;
 }
 
 @media (min-width: $desktop-width) {

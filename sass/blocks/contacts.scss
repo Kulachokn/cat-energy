@@ -1,23 +1,50 @@
 @import "../variables";
 
+.contacts--silver {
+  background: $background;
+}
+
+.contacts__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  //min-width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__address {
   margin: 0 auto;
   font-style: normal;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 450px;
+  padding-bottom: 26px;
 }
 
 .contacts__title {
-    font-family: $main-font;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+  display: block;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 125px;
+  padding-right: 15px;
+}
 
-//.contacts__map {
-//  margin-right: -20px;
-//  margin-left: -20px;
-//}
+.contacts__location {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $small-text;
+  width: 135px;
+}
+
+.contacts__map {
+  margin-right: -20px;
+  margin-left: -20px;
+}
 
 .contacts__map iframe {
   display: block;
