@@ -53,16 +53,16 @@
         <p class="program-form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form action="#" name="form" method="post" class="form">
             <fieldset class="form__cat">
-                <legend class="form__title visually-hidden">Данные кота</legend>
+                <legend class="form__title-hidden visually-hidden">Данные кота</legend>
                 <div class="form__cat-container">
                     <div class="form__cat-data">
                         <label class="form__cat-name"><span>имя:<sup>*</sup></span>
                             <input type="text" name="cat-name" placeholder="барсик">
                         </label>
-                        <label class="form__cat-weight">вес (кг):<sup>*</sup>
+                        <label class="form__cat-weight"><span>вес (кг):<sup>*</sup></span>
                             <input type="number" name="cat-weight" placeholder="7">
                         </label>
-                        <label class="form__cat-age">возраст (лет):
+                        <label class="form__cat-age"><span>возраст (лет):</span>
                             <input type="number" name="cat-age" placeholder="7">
                         </label>
                     </div>
@@ -80,7 +80,7 @@
                 </div>
             </fieldset>
             <fieldset class="form__contact">
-                <legend class="form__title">Контактные данные (владельца кота)</legend>
+                <legend class="form__title"><span>Контактные данные (владельца кота)</span></legend>
                 <div class="form__owner">
                     <label class="form__owner-email">e-mail:<sup>*</sup>
                         <input type="email" name="owner-email" placeholder="kuklachev@gmail.com">
@@ -91,14 +91,13 @@
                 </div>
             </fieldset>
             <fieldset class="form__comment">
-                <legend class="form__title">Комментарий</legend>
+                <legend class="form__title"><span>Комментарий</span></legend>
                 <div class="form__comment-container">
-                    <textarea name="comment" cols="40" rows="6"
-                              placeholder="расскажите обо всех повадках кота"></textarea>
+                    <textarea name="comment" placeholder="расскажите обо всех повадках кота"></textarea>
                 </div>
             </fieldset>
             <fieldset class="form__addition">
-                <legend class="form__title form__title--addition">Дополнительно</legend>
+                <legend class="form__title form__title--addition"><span>Дополнительно</span></legend>
                 <div class="form__addition-container">
                     <label class="form__addition-sugar">
                         <input class="visually-hidden" type="checkbox" name="addition-sugar" checked>сахарозаменитель
@@ -120,7 +119,7 @@
             </div>
         </form>
     </section>
-    <section class="contacts">
+    <section class="contacts contacts--silver">
         <div class="contacts__wrapper">
             <address class="contacts__address">
                 <span class="contacts__title">приглашаем к сотрудничеству дилеров!</span>

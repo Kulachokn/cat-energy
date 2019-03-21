@@ -7,25 +7,6 @@
   flex-direction: column;
 }
 
-@media (min-width: $tablet-width) {
-  .program__list {
-    flex-direction: row;
-  }
-  .program__type {
-    width: 708px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__list {
-    flex-direction: row;
-  }
-  .program__type {
-    width: 570px;
-  }
-}
-
-
 .program__type {
   background-color: $background;
   margin: 0 auto;
@@ -79,4 +60,22 @@
   width: 240px;
   height: 2px;
   border-bottom: 1px solid $add-color;
+}
+
+@media (min-width: $tablet-width) {
+  .program__list {
+    flex-direction: row;
+  }
+  .program__type {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__list {
+    flex-direction: row;
+  }
+  .program__type {
+    width: 570px;
+  }
 }
