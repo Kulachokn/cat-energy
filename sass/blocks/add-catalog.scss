@@ -1,11 +1,12 @@
 @import "../variables";
 
-.add-catalog__wrapper {
+.add-catalog__container {
   //min-width: 320px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .add-catalog__title {
@@ -133,7 +134,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .add-catalog__wrapper {
+  .add-catalog__container {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -141,6 +142,11 @@
   .add-catalog__title {
     font-size: 36px;
     line-height: 36px;
+    max-width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-bottom: 80px;
   }
 
   .add-good:first-child {
@@ -199,16 +205,75 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .add-catalog__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .add-catalog__title {
     font-size: 36px;
     line-height: 36px;
+    max-width: none;
+    padding-bottom: 79px;
+    border-bottom: none;
   }
-  .add-catalog__wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
+
+  .add-catalog__list {
+    width: 895px;
+    margin-right: 80px;
   }
+
   .add-good {
-    flex-direction: row;
-    flex-wrap: wrap;
+    max-width: none;
+    padding: 15px 0 16px;
+    border-right: none;
+    border-left: none;
   }
+
+  .add-good__title {
+    //width: 325px;
+    width: 33.6%;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .add-product__text {
+    //width: 285px;
+    width: 33.6%;
+    padding: 0;
+    padding-top: 14px;
+  }
+
+  .add-product__quantity {
+    text-align: left;
+    //width: 245px;
+  }
+
+  .add-product__value {
+    width: 81px;
+    text-align: left;
+  }
+
+  .add-catalog__all {
+    box-sizing: border-box;
+    width: 245px;
+    padding: 187px 30px 45px;
+    background: url(../../img/gift-photo-desktop.jpg);
+  }
+
+  .add-catalog__all-link {
+    display: block;
+    text-align: center;
+  }
+
+
 }
