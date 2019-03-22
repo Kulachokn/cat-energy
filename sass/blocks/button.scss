@@ -55,6 +55,18 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .button--form {
+    width: 45%;
+    max-width: 330px;
+    margin: 0 60px 0 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .button--form {
     flex-grow: 1;

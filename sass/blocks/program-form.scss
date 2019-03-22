@@ -64,6 +64,7 @@
   text-align: center;
   margin: 0;
   padding: 0 20px 25px;
+  color: $big-text;
 }
 
 .program-form__text {
@@ -271,11 +272,14 @@
   .program-form__title {
     font-size: 60px;
     text-align: left;
+    padding-left: 33px;
   }
   .program-form__text {
+    max-width: 980px;
     font-size: 20px;
     line-height: 30px;
-    padding-left: 40px;
+    padding-left: 70px;
+    padding-right: 320px;
   }
   .form__cat-container {
     //display: flex;
@@ -292,8 +296,85 @@
 
   }
   .form__type-program {
-    padding-right: 37px;
-    padding-left: 40px;
+    max-width: 840px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 27px 28px 28px;
+  }
+
+  //.form__type-program::after {
+  //  top: 0;
+  //  right: -50vw;
+  //  left: 0;
+  //  z-index: -1;
+  //  border: 1px solid rgba(205,205,205,.5);
+  //}
+
+  //.form__type-program::before {
+  //  top: 0;
+  //  right: 0;
+  //  left: -50vw;
+  //  z-index: -1;
+  //  border: 1px solid rgba(205,205,205,.5);
+  //}
+
+  .form__title {
+    font-size: 36px;
+    line-height: 36px;
+    max-width: 840px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .form__owner {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .form__comment-container {
+    max-width: 840px;
+    padding-left: 70px;
+    padding-right: 70px;
+    textarea {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 19px;
+      width: 94%;
+    }
+  }
+
+  .form__addition {
+    padding-bottom: 0;
+  }
+
+  .form__addition-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 840px;
+    padding-right: 70px;
+    padding-left: 70px;
+    label {
+      box-sizing: border-box;
+      display: block;
+      max-width: 300px;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 55px;
+    }
+    label:nth-child(odd) {
+      margin-right: 28px;
+    }
+  }
+
+  .form__push {
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .form__text {
+    margin-top: 15px;
   }
 }
 
