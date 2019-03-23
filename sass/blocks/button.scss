@@ -70,6 +70,9 @@
 @media (min-width: $desktop-width) {
   .button--form {
     flex-grow: 1;
+    flex-basis: 100%;
+    max-width: 568px;
+    margin-right: 0;
   }
 
   .button--add-good {

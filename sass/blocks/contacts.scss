@@ -88,4 +88,31 @@
     background-color: $white;
     justify-content: space-around;
   }
+
+  .contacts__wrapper {
+    position: relative;
+    max-width: none;
+    padding-top: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .contacts__address {
+    width: 570px;
+    margin: 0;
+    position: absolute;
+    content: '';
+    top: 50px;
+    left: 110px;
+    padding-top: 65px;
+    padding-right: 76px;
+    padding-left: 76px;
+    padding-bottom: 65px;
+  }
+
+  .contacts__map {
+    min-height: 400px;
+    margin-right: -40px;
+    margin-left: -40px;
+  }
 }
