@@ -1,50 +1,89 @@
-.page-header {
-  margin: 0;
-  padding: 0;
-  height: 65px;
-  display: flex;
+@import "../variables";
+
+.header {
+  min-height: 66px;
+  position: relative;
+  border-bottom: 1px #d9d9d9 solid;
+}
+
+.navigation {
   position: relative;
 }
 
-.page-header__logo-image {
-  position: absolute;
-  top: 10px;
-  left: 15px;
+.navigation__container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  z-index: 10;
+  padding-top: 11px;
 }
 
-.page-header__logo {
-  position: absolute;
-  top: 24px;
-  left: 110px;
+.navigation__logo {
+  padding-bottom: 15px;
 }
 
-.main-nav__list {
+.navigation__list {
+  margin: 0;
+  padding: 0;
   display: none;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.main-nav {
-  position: absolute;
-  top: 25px;
-  right: 10px;
-}
-
-.site-list__item {
+.navigation__item {
+  display: block;
+  flex-shrink: 0;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  text-align: center;
   text-transform: uppercase;
+  font-family: $main-font;
   font-size: 20px;
   line-height: 20px;
-  text-align: center;
+  border-top: 1px #d9d9d9 solid;
+  a {
+    color: $big-text;
+  }
 }
 
-//.main-nav__toggle {
-//  font-size: 0;
-//}
+@media (min-width: $tablet-width) {
 
-.main-nav::after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 24px;
-  height: 18px;
-  background: url('../../img/mobile-menu.svg') no-repeat 0 0;
+  .header {
+    min-height: 92px;
+    border-bottom: none;
+  }
+
+  .navigation__container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-top: 24px;
+  }
+
+  .navigation__logo {
+    margin-right: 50px;
+    padding-bottom: 0;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
 }
