@@ -1,7 +1,7 @@
 @import "../variables";
 
 .program__container {
-  width: 320px;
+  min-width: 320px;
   padding-right: 20px;
   padding-left: 20px;
   box-sizing: border-box;
@@ -19,29 +19,47 @@
 
 .program__type {
   background-color: $background;
-  margin: 0 auto;
-  padding: 0;
-  width: 280px;
   position: relative;
-  padding-bottom: 15px;
-  padding-top: 20px;
+  padding: 20px 7.14% 15px;
 }
 
 .program__type--slim {
   margin-bottom: 20px;
 }
 
-.program__type {
-  a {
-    font-family: $main-font;
-    font-size: 16px;
-    line-height: 16px;
-    color: $big-text;
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0;
-    margin-left: 25px;
-  }
+.program__link {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $big-text;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+  position: relative;
+}
+
+.program__link::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: -34px;
+  width: 21px;
+  height: 3px;
+  background: #666;
+}
+
+.program__link::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -42px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 6px solid #666;
 }
 
 .program__title {
@@ -49,10 +67,45 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  text-align: center;
+  //text-align: center;
   font-weight: lighter;
   margin: 0;
-  padding: 0;
+  padding: 0 0 30px 71px;
+  color: $big-text;
+}
+
+.program__title::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #68b738;
+}
+
+.program__title::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  width: 35px;
+  height: 50px;
+  background: url('../../img/Vector Smart Object.svg') no-repeat;
+}
+
+.program__title--panther::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  width: 35px;
+  height: 50px;
+  background: url('../../img/Vector Smart Object copy 2.svg') no-repeat;
 }
 
 .program__description {
@@ -61,8 +114,8 @@
   font-family: $add-font;
   font-size: 14px;
   line-height: 18px;
-  width: 230px;
-  margin-bottom: 45px;
+  //width: 230px;
+  padding-bottom: 41px;
 }
 
 .program__description::after {
@@ -76,11 +129,57 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program__list {
-    flex-direction: row;
+  .program__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    max-width: 900px;
   }
+
   .program__type {
-    width: 708px;
+    padding: 77px 7.4% 61px;
+    margin-bottom: 30px;
+  }
+
+  .program__title {
+    padding-bottom: 25px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program__title::before {
+    width: 200px;
+    height: 200px;
+    top: 65px;
+    right: 50px;
+    left: auto;
+  }
+
+  .program__description {
+    //padding-right: 36.5%;
+    padding-right: 220px;
+    padding-bottom: 56px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__description::after {
+    display: none;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 0;
+  }
+
+  .program__link::before {
+    top: 12px;
+  }
+
+  .program__link::after {
+    top: 8px;
   }
 }
 
@@ -88,6 +187,7 @@
   .program__list {
     flex-direction: row;
   }
+
   .program__type {
     width: 570px;
   }

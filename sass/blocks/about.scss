@@ -2,7 +2,7 @@
 
 .about__container {
   box-sizing: border-box;
-  width: 320px;
+  min-width: 320px;
   max-width: 540px;
   margin: 0 auto;
   padding-left: 20px;
@@ -17,6 +17,7 @@
   font-weight: normal;
   margin: 0;
   padding-bottom: 30px;
+  color: $big-text;
 }
 
 .about__list {
@@ -27,6 +28,7 @@
 }
 
 .about__item {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -34,11 +36,12 @@
   min-height: 80px;
   padding-left: 80px;
   padding-bottom: 26px;
+  padding-top: 7px;
   position: relative;
-  p {
-    margin: 0;
-    padding-top: 7px;
-  }
+  //p {
+  //  margin: 0;
+  //  padding-top: 7px;
+  //}
 }
 
 .about__item::before {
@@ -49,51 +52,119 @@
   width: 60px;
   height: 60px;
   background-color: $green;
+  background-size: 84%;
 }
 
-.about__item--content::after {
+.about__item--content::before {
   position: absolute;
   content: '';
-  top: 25px;
-  left: 20px;
-  width: 26px;
-  height: 29px;
-  background-image: url("../../img/advantage-1.png");
+  //top: 25px;
+  //left: 20px;
+  //width: 26px;
+  //height: 29px;
+  background: $green url("../../img/advantage-1.png") no-repeat center;
+  background-size: 47%;
 }
 
-.about__item--cooking::after {
+.about__item--cooking::before {
   position: absolute;
   content: '';
-  top: 20px;
-  left: 20px;
-  width: 29px;
-  height: 31px;
-  background-image: url("../../img/andvantage-2.png");
+  //top: 20px;
+  //left: 20px;
+  //width: 29px;
+  //height: 31px;
+  background: $green url("../../img/andvantage-2.png") no-repeat center;
+  background-size: 47%;
 }
 
-.about__item--eat::after {
+.about__item--eat::before {
   position: absolute;
   content: '';
-  top: 20px;
-  left: 20px;
-  width: 23px;
-  height: 30px;
-  background-image: url("../../img/advantage-3.png");
+  //top: 20px;
+  //left: 20px;
+  //width: 23px;
+  //height: 30px;
+  background: $green url("../../img/advantage-3.png") no-repeat center;
+  background-size: 47%;
 }
 
-.about__item--time::after {
+.about__item--time::before {
   position: absolute;
   content: '';
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 31px;
-  background-image: url("../../img/advantage-4.png");
+  //top: 20px;
+  //left: 20px;
+  //width: 26px;
+  //height: 31px;
+  background: $green url("../../img/advantage-4.png") no-repeat center;
+  background-size: 47%;
 }
 
 @media (min-width: $tablet-width) {
+  .about__container {
+    max-width: 840px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .about__container::after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: -50vw;
+    bottom: 0;
+    left: -50vw;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .about__title {
+    font-size: 60px;
+  }
+
   .about__list {
     flex-direction: row;
+    flex-wrap: wrap;
+    counter-reset: itemNumber 0;
+  }
+
+  .about__item {
+    display: block;
+    flex-shrink: 0;
+    padding: 110px 18.36% 135px 0;
+    width: 54.2%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about__item:nth-child(2n) {
+    width: 45.8%;
+    padding-right: 7.6%;
+  }
+
+  .about__item:nth-child(3),
+  .about__item:nth-child(4) {
+   padding-bottom: 102px;
+  }
+
+  .about__item::after {
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 115px;
+    z-index: -1;
+    counter-increment: itemNumber;
+    content: counter(itemNumber);
+    font-family: $main-font;
+    font-size: 281px;
+    line-height: 1;
+    font-weight: 400;
+    color: $background;
+  }
+
+  .about__item::before {
+    width: 80px;
+    height: 80px;
   }
 }
 
