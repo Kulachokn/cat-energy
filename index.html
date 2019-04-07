@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header class="header header-index">
+<header class="header header--index">
     <nav class="navigation">
         <div class="navigation__container">
             <div class="navigation__logo">
                 <a href="#" class="navigation__logo-link">
-                    <img src="img/logo-mobile-index.svg" alt="Логотип Cat-energy">
+                    <picture>
+                        <source media="(min-width: 1250px)" srcset="img/logo-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                        <img src="img/logo-mobile-index.svg" alt="Логотип Cat-energy">
+                    </picture>
                 </a>
             </div>
             <ul class="navigation__list">
@@ -29,26 +33,36 @@
         <div class="promo__container">
             <h1 class="promo__title">Функциональное питание для котов</h1>
             <p class="promo__tagline">Занялся собой? Займись котом!</p>
-            <img class="promo__image" src="img/index-can-mobile.png" width="280" height="270"
-                 alt="Cat Energy - лучшая еда для Вашего кота!">
+            <div class="promo__img">
+                <picture>
+                    <source media="(min-width: 1300px)"
+                            srcset="img/content/promo--food-desktop@1x.png 1x, img/content/promo--food-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                            srcset="img/content/promo--food-tablet@1x.jpg 1x, img/content/promo--food-tablet@2x.jpg 2x">
+                    <img src="img/content/promo--food-mobile@1x.png"
+                         srcset="img/content/promo--food-mobile@1x.png 1x, img/content/promo--food-mobile@2x.png 2x"
+                         alt="Cat Energy - лучшая еда для Вашего кота!" title="Cat Energy - лучшая еда для Вашего кота!"
+                         width="280" height="271">
+                </picture>
+            </div>
             <a href="#" class="button button-promo">Подобрать программу</a>
         </div>
     </section>
     <section class="program">
         <div class="program__container">
             <h2 class="visually-hidden">Программы питания</h2>
-                <section class="program__type program__type--slim">
-                    <h3 class="program__title">Похудение</h3>
-                    <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-                        деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                    <a href="#" class="program__link">каталог slim</a>
-                </section>
-                <section class="program__type program__type--mass">
-                    <h3 class="program__title program__title--panther">Набор массы</h3>
-                    <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-                        Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                    <a href="#" class="program__link">каталог pro</a>
-                </section>
+            <section class="program__type program__type--slim">
+                <h3 class="program__title">Похудение</h3>
+                <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+                    деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <a href="#" class="program__link">каталог slim</a>
+            </section>
+            <section class="program__type program__type--mass">
+                <h3 class="program__title program__title--panther">Набор массы</h3>
+                <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
+                    Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <a href="#" class="program__link">каталог pro</a>
+            </section>
         </div>
     </section>
     <section class="about">
@@ -82,14 +96,18 @@
             </ul>
             <p class="sample__text">Затраты на питание: <span>15 000 руб.</span></p>
             <div class="range-slider slider-wrapper">
-                <ul class="range-slider__list">
-                    <li class="range-slider__item range-slider__item--cat-before">
-                        <img src="img/before-mobile.jpg" width="311" height="232" alt="Борис до">
-                    </li>
-                    <li class="range-slider__item range-slider__item--cat-after">
-                        <img src="img/after-mobile.jpg" width="251" height="240" alt="Борис после">
-                    </li>
-                </ul>
+                <div class="range-slider__img">
+                    <picture>
+                        <source media="(min-width: 1250px)" srcset="img/content/range-slider--before-desktop@1x.png 1x, img/content/range-slider--before-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/content/range-slider--before-tablet@1x.png 1x, img/content/range-slider--before-tablet@2x.png 2x">
+                        <img src="img/content/range-slider--before-mobile@1x.png" srcset="img/content/range-slider--before-mobile@1x.png 1x, img/content/range-slider--before-mobile@2x.png" class="range-slider__img-before" alt="Cat before" title="Cat before" width="320" height="240">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1250px)" srcset="img/content/range-slider--after-desktop@1x.png 1x, img/content/range-slider--after-desktop@2x.png 2x">
+                        <source media="(min-width: 768px)" srcset="img/content/range-slider--after-tablet@1x.png 1x, img/content/range-slider--after-tablet@2x.png 2x">
+                        <img src="img/content/range-slider--after-mobile@1x.png" srcset="img/content/range-slider--after-mobile@1x.png 1x, img/content/range-slider--after-mobile@2x.png" class="range-slider__img-after range-slider__img-after--hidden" alt="Cat after" title="Cat after">
+                    </picture>
+                </div>
                 <div class="range-slider__control">
                     <button type="button" class="range-slider__direction range-slider__direction--before">было</button>
                     <div class="range-slider__scale">
